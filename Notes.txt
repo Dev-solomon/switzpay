@@ -9,7 +9,7 @@ LIGHT GREEN - background: #4ABB481A;
 GREY - background: #8686861A;
 LIGHT LEMON - background: #DDFF5633;
 MIDDLE RED - background: #F50C2D66;
-L RED - background: #F50C2D1A;
+LIGHT RED - background: #F50C2D1A;
 MESSAGE US GREEN - background: #4ABB48;
 INFO BLUE - background: #0045F6;
 
