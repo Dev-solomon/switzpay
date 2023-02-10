@@ -1,0 +1,16 @@
+The link to the figma file below:
+https://www.figma.com/file/8H23ZCRo34JEUMZhjvA5Jp/Switzpay?node-id=1%3A3&t=06lhaMvtv5nnBwxv-0
+
+
+PRIMARY BLUE - background: #0EA4F2;
+LIGHT BLUE - background: #0EA4F24D;
+LIGHT RED - background: #F50C2D1A;
+LIGHT GREEN - background: #4ABB481A;
+GREY - background: #8686861A;
+LIGHT LEMON - background: #DDFF5633;
+MIDDLE RED - background: #F50C2D66;
+LIGHT RED - background: #F50C2D1A;
+MESSAGE US GREEN - background: #4ABB48;
+INFO BLUE - background: #0045F6;
+
+
