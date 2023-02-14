@@ -1,0 +1,11 @@
+div.footer{
+    padding: 40px;
+}
+a.link-footer{
+    text-decoration: none;
+    color: black;
+}
+a.link-footer:hover{
+    color: red;
+}
+ 
