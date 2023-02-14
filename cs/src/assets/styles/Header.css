@@ -1,0 +1,44 @@
+ .Header{
+    background-color: white;
+    border-bottom: 1px ridge rgb(218, 216, 216); 
+    padding: 15px; 
+}
+.Header .header-logo{
+    margin-left: 40px;
+}
+.nav-links a{  
+    color: black; 
+    padding-left: 15px; 
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px; 
+    text-decoration: none;
+}
+.nav-links a:hover{
+    color: var(--primaryBlue);  
+}
+.nav-links a:active{
+    color: red;
+}
+.nav-links button.login-button{
+    padding-left: 15px; 
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    border: 1px solid var(--primaryBlue);
+    color: var(--primaryBlue);
+    background-color: white;
+    border-radius: 10px;
+}
+.nav-links button.signup-button{
+    padding-left: 15px; 
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    border: none;
+    background-color: var(--primaryBlue);
+    color: white;
+    border-radius: 10px;
+}

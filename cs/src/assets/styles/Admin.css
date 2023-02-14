@@ -1,0 +1,44 @@
+/* Header css */ 
+#header{  
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    border-bottom: 1px solid red; 
+  }
+#header h2{  
+    color: rgb(6, 140, 230); 
+    padding: 10px;
+    font-size: 20px; 
+  }
+/* RightBar */
+div#rightBar{
+    width: max-content;
+    height: 100%;
+    background-color: rgb(6, 140, 230);
+    border-left: 1px solid white; 
+    right: 0;
+    top: auto; 
+} 
+a{
+    text-decoration: none;
+}
+#panelcon{
+    color: white;
+}
+/* Infocard */
+div#infoCard{  
+    padding: 5px; 
+    margin: 5px;
+    box-shadow: 1px 2px 1px grey;
+    border-radius: 10px;
+}
+.options{ 
+    float: right;
+} 
+.card_name{
+    color: rgb(77, 74, 74);
+}
+.card_num{
+    color: rgb(6, 140, 230);
+}
