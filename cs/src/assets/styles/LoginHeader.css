@@ -39,17 +39,18 @@ p img.arrowdown{
 p.notification{
     position: relative;
 }
-span.bell-num{
+i.bell-num{
     position: absolute;
     top: 0;
     z-index: 90;
     color: white;
-    width: fit-content; 
-    border-radius: 50%;
-    border: none;
-    background-color: red;  
-    padding-left: 3px;
-    padding-right: 3px;
-    left: 5px;
+    width: 15px;
+    height: 15px; 
+    border-radius: 50%; 
+    background-color: red;    
+    left: 12px;
+    right: auto;
+    text-align: center; 
+    font-size: 10px;
 
 }
