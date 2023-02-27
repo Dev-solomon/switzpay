@@ -4,7 +4,7 @@ import heroPic from '../assets/imgs/hero-pic.png';
 
 function Hero() {
   return (
-    <div className='container d-lg-flex flex-lg-column justify-content-lg-center hero-section'>
+    <div className='container d-lg-flex d-md-flex d-flex  flex-lg-column flex-column  justify-content-lg-center justify-content-center hero-section'>
         <p className='caption col-12 text-lg-center'>
             Achieve Business & Financial <br/> <span className='text-info'>Success</span> through our CPA <br/> Marketing platform
         </p>
@@ -14,7 +14,7 @@ function Hero() {
              and bring customers closer to company products! Trusted by more than 12k users worldwide with affiliated Organisations.
         </p>
 
-        <button className='caption-button text-lg-center mx-auto'>Get Started</button>
+        <button className='caption-button text-lg-center text-md-center text-sm-center text-center mx-auto'>Get Started</button>
 
         <div className='caption-picture col-12 mx-auto container'>
           <img src={heroPic} alt='caption-pix' />

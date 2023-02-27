@@ -1,0 +1,25 @@
+div.offers-title{
+    margin-top: 20px;
+}
+img.filter-icon{
+    width: 20px;
+    background-color: #0EA4F24D; 
+    margin-left: 5px;
+    border-radius: 4px;
+    padding: 4px;
+}
+p{
+    font-size: 15px; 
+}
+.select-dropdown{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    color: grey;
+    border: 1px solid grey; 
+} 
+.select-dropdown option:hover{
+    background-color: grey;
+}

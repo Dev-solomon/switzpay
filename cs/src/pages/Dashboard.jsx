@@ -5,6 +5,7 @@ import DashboardEarnings from '../components/DashboardEarnings';
 import AdPost from '../components/ads';
 import { PostCards } from '../components/PostCard';
 import UserChat from '../components/UserChat'; 
+import BlogRead from '../components/BlogRead';
 
 
 export class Dashboard extends Component {
@@ -16,6 +17,7 @@ export class Dashboard extends Component {
         <DashboardEarnings/>
         <AdPost/> 
         <PostCards/>
+        <BlogRead/>
         <UserChat/>
       </div>
     )

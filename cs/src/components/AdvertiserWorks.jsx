@@ -14,6 +14,25 @@ function AdvertiserWorks() {
                     or fill the contact form and receive a response within 48hrs.
                 </p>
 
+
+                    <div className='sign-description col-5 d-lg-none d-flex flex-row justify-content-evenly'>
+                        <div className='d-lg-flex flex-lg-column'>  
+                            <i className='num text-center'>1</i>
+                            <i className='text-center'>Signup</i>
+                        </div>
+                        {/* &mdash; &rsaquo; */}
+                        <div className='d-lg-flex flex-lg-column'>  
+                            <i className='num text-center'>2</i>
+                            <i className='text-center'>Post Offers</i>
+                        </div>
+                        {/* &mdash; &rsaquo; */}
+                        <div className='d-lg-flex flex-lg-column'>  
+                            <i className='num text-center'>3</i>
+                            <i className='text-center'>Get Results</i>
+                        </div>
+
+                    </div>
+
                 <h2>
                     Do you want clients, subscribers or <br/>
                     customers?
@@ -24,7 +43,7 @@ function AdvertiserWorks() {
 
         </div>
 
-        <div className='sign-description col-5 d-lg-flex flex-flex-lg-row justify-content-lg-evenly'>
+        <div className='sign-description col-5 d-lg-flex d-md-none d-sm-none d-none flex-lg-row justify-content-lg-evenly'>
             <div className='d-lg-flex flex-lg-column'>  
                 <i className='num text-center'>1</i>
                 <i className='text-center'>Signup</i>

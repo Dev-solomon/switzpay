@@ -4,6 +4,7 @@ import Login  from './components/LoginForm';
 import SignUp from './components/SignForm';
 import HomePage from './pages/HomePage';
 import Dashboard from './pages/Dashboard';
+import Offers from './pages/Offers';
 import {BrowserRouter as Router, Routes, Route,} from 'react-router-dom';
 
  
@@ -16,6 +17,7 @@ function App(){
           <Route path='/dashboard' element={<Dashboard/>} />
           <Route path='/login' element={<Login />} /> 
           <Route path='/signup' element={<SignUp />} /> 
+          <Route path='/offers' element={<Offers/>} />
           <Route path='/admin' element={<AppHome />} /> 
         </Routes>
       </Router>

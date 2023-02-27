@@ -11,7 +11,7 @@ export class PostCard extends Component {
       <h3 className="post-title">Lorem Ipsum Title</h3>
       <p className='post-content'>This is a new title stuff that is just written to fill the empty space</p>
 
-      <span><a  href='*' >Read...</a></span>
+      <span><a href='*Alfred' data-bs-toggle="modal" data-bs-target="#exampleModal">Read...</a></span>
 
         
       </div>

@@ -1,7 +1,7 @@
 div.post-card{
     border: 1px solid rgb(210, 210, 210); 
     margin: 4px; 
-    height: 300px;
+    height: 330px; 
     border-radius: 10px;
     padding: 0;
 }
