@@ -16,7 +16,7 @@ function SectionOne(){
       <button className="bg-regal-blue text-white mx-auto py-2 px-3 text-sm rounded-md gap-2 mb-3 md:text-xl md:py-4 md:px-6 md:mb-6 lg:mb-8">
         Get Started
       </button>
-      <img src={pic} alt="picture" className="px-4 mb-6 md:px-8 lg:px-16 lg:w-full" />
+      <img src={pic} alt="picture" className="px-4 mb-6 md:px-8 lg:px-16" />
     </div>
   );
 }
