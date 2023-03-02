@@ -11,6 +11,7 @@ module.exports = {
         "dark-yellow": "rgba(221, 255, 86, 0.7)",
         "light-red": "rgba(245, 12, 45, 0.1)",
         "dark-red": "rgba(245, 12, 45, 0.4)",
+        "sky-blue": "rgba(14, 164, 242, 0.2)",
       },
       fontFamily: {
         sans: ["Inter", "sans"],
