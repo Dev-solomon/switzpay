@@ -4,7 +4,7 @@ import hierarchy from '../assets/imgs/hierarchy-2.png'
 
 function RedCard({cardTitle}) {
   return (
-    <div className='col-4 red-card d-lg-flex flex-column justify-content-center'>
+    <div className='col-lg-4 col-md-8 mx-md-auto mx-lg-0 red-card d-lg-flex flex-column justify-content-center'>
        <div className='card-icon mx-auto red mt-3'><img src={hierarchy} alt="card-icon" style={{width: "30px"}} /></div>
 
         <p className='text-center cardTitle'> { cardTitle } </p>
