@@ -1,4 +1,4 @@
-import svg from "../assets/Vector.svg";
+import svg from "../assets/Vector.png";
 function SectionFive() {
   return (
     <div className="px-4 my-8 md:mt-16 md:px-8 lg:px-16">
@@ -18,14 +18,14 @@ function SectionFive() {
             </p>
             <p>Signup</p>
           </div>
-          <img src={svg} alt="image" className="my-3 md:rotate-90" />
-          <div className="text-center md:mx-6">
+          <img src={svg} alt="image" className="my-3 md:rotate-[270deg]" />
+          <div className="text-center md:ml-6 md:mr-3">
             <p className="w-[100px] h-[100px] bg-sky-blue text-base font-bold rounded-full pt-10 mb-3">
               2
             </p>
             <p>Work on Offers</p>
           </div>
-          <img src={svg} alt="image" className="my-3 md:rotate-90" />
+          <img src={svg} alt="image" className="my-3 md:rotate-[270deg]" />
           <div className="text-center md:mx-6">
             <p className="w-[100px] h-[100px] bg-sky-blue text-base font-bold rounded-full pt-10 mb-3">
               3
@@ -37,7 +37,7 @@ function SectionFive() {
       <p className="text-xl font-medium mt-8 md:text-[28px] md:mt-10 md:w-[505px]">
         Do you want to earn money by doing online activities?
       </p>
-      <button className="bg-regal-blue w-[104px] p-3 rounded-md my-3 md:my-5 md:w-[180px] md:py-4 md:px-8">
+      <button className="bg-regal-blue w-[104px] p-3 rounded-md mt-3 md:my-5 md:w-[180px] md:py-4 md:px-8">
         <a href="/" className="text-sm text-white md:text-xl">
           Be a Worker
         </a>

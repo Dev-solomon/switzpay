@@ -1,4 +1,4 @@
-import svg from '../assets/Vector.svg';
+import svg from '../assets/Vector.png';
 function SectionThird(){
 return (
   <div className="px-4 my-8 md:mt-16 md:px-8 lg:px-16">
@@ -18,14 +18,14 @@ return (
           </p>
           <p>Signup</p>
         </div>
-        <img src={svg} alt="image" className="my-3 md:rotate-90" />
+        <img src={svg} alt="image" className="my-3 md:rotate-[270deg]" />
         <div className="text-center md:mx-6">
           <p className="w-[100px] h-[100px] bg-sky-blue text-base font-bold rounded-full pt-10 mb-3">
             2
           </p>
           <p>Post Offers</p>
         </div>
-        <img src={svg} alt="image" className="my-3 md:rotate-90" />
+        <img src={svg} alt="image" className="my-3 md:rotate-[270deg]" />
         <div className="text-center md:mx-6">
           <p className="w-[100px] h-[100px] bg-sky-blue text-base font-bold rounded-full pt-10 mb-3">
             3
