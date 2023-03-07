@@ -1,16 +1,33 @@
-import BlueCardTwo from "./BlueCardTwo";
-import YellowCardTwo from "./YellowCardTwo";
-import RedCardTwo from "./RedCardTwo";
-function SectionFour(){
+import bluePic from "../assets/hierarchy.png";
+import yellowPic from "../assets/wallet-add.png";
+import redPic from "../assets/element-4.png";
+import BlueCard from "./BlueCard";
+import YellowCard from "./YellowCard";
+import RedCard from "./RedCard";
+import HeadingOne from "./HeadingOne";
+function SectionFour() {
   return (
     <div className=" px-4 my-4 lg:px-16">
-      <h3 className="text-lg font-medium text-center md:text-2xl lg:text-[28px] lg:text-left">
-        Switzpay for Workers
-      </h3>
+      <HeadingOne heading="Switzpay for Workers" />
       <div className="flex flex-col lg:flex-row">
-        <BlueCardTwo />
-        <YellowCardTwo />
-        <RedCardTwo />
+        <BlueCard
+          pic={bluePic}
+          miniheading="Flexibility"
+          paragraph="Work from anywhere, as long as you have an internet connection, which
+        provides a great deal of flexibility and freedom."
+        />
+        <YellowCard
+          pic={yellowPic}
+          miniheading="High Earning Potential"
+          paragraph="Higher commission than other affiliate marketing programs, which
+        provides you with a significant income stream."
+        />
+        <RedCard
+          pic={redPic}
+          miniheading="Variety of Offers"
+          paragraph="Wide range of offers, which allows you to find products and services
+        that align with your interests and passions."
+        />
       </div>
     </div>
   );

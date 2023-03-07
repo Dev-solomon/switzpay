@@ -32,12 +32,12 @@ function Header (){
         >
           <RiCloseFill />
         </button>
-        <ul className="pt-40 pl-24 lg:flex lg:pt-8 lg:pl-0 lg:pr-16">
+        <ul className=" pt-40 pl-24 lg:flex lg:pt-8 lg:pl-0 lg:pr-16">
           <li className="bg-white sm:w-[80%] md:w-[80%] text-center py-2 rounded-md text-lg mb-4 lg:pr-6 lg:py-3 lg:text-left lg:text-base lg:mb-0">
             <a href="/">Home</a>
           </li>
           <li className="bg-white sm:w-[80%] md:w-[80%] text-center py-2 rounded-md text-lg mb-4 lg:px-2 lg:py-3 lg:text-left lg:text-base lg:mb-0">
-            <a href="/" className='w-20 block'>About Us</a>
+            <a href="/" className='lg:w-20 lg:block'>About Us</a>
           </li>
           <li className="bg-white sm:w-[80%] md:w-[80%] text-center py-2 rounded-md text-lg mb-4 lg:px-2 lg:py-3 lg:text-left lg:text-base lg:mb-0">
             <a href="/">Contact</a>

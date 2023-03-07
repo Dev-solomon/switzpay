@@ -19,8 +19,6 @@ function FAQS({faq}) {
             onClick={handleClick}
             className="cursor-pointer md:ml-[23rem] lg:ml-[35rem]"
           >
-            {/* {!isOpen && <span>+</span>}
-        {isOpen && <span>x</span>} */}
             {isOpen ? (
               <span className="rounded-full py-1 px-[0.45rem] bg-regal-blue text-xs text-white md:text-sm md:py-2 md:px-3">
                 x

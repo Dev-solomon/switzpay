@@ -26,7 +26,10 @@ function Footer() {
         </li>
       </ul>
       <div className="flex items-center justify-center">
-        <img src={pic} alt="IG" />
+        <a href="/">
+          {" "}
+          <img src={pic} alt="IG" />{" "}
+        </a>
         <img src={logo} alt="logo" className="w-[20%] ml-7 md:ml-14" />
       </div>
     </div>

@@ -1,11 +1,10 @@
 import pic from '../assets/star.png';
 import picture from '../assets/quote.png';
+import Heading from './Heading';
 function SectionSeven (){
   return (
     <div className="px-4 my-6 md:px-8 md:mt-10 lg:px-16">
-      <h3 className="text-lg font-medium md:text-2xl lg:text-[28px]">
-        Reviews from Our Customers
-      </h3>
+      <Heading heading="Reviews from Our Customers" />
       <div className="mt-3 flex flex-col md:flex-row md:justify-between">
         <img
           src={pic}

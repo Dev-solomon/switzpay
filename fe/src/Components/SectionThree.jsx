@@ -1,10 +1,9 @@
 import svg from '../assets/Vector.png';
-function SectionThird(){
+import Heading from './Heading';
+function SectionThree(){
 return (
   <div className="px-4 my-8 md:mt-16 md:px-8 lg:px-16">
-    <h3 className="text-lg font-medium md:text-2xl lg:text-[28px]">
-      How it works
-    </h3>
+    <Heading heading="How it works" />
     <div className="flex flex-col mt-4 lg:flex-row lg:justify-between">
       <p className="text-sm font-normal md:text-lg lg:text-xl lg:pt-2 lg:w-[608px]">
         Advertisers willing to test, carry out surveys and get users more closer
@@ -46,4 +45,4 @@ return (
 );
 }
 
-export default SectionThird;
+export default SectionThree;

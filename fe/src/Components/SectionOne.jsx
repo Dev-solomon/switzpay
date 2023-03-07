@@ -2,7 +2,7 @@ import pic from '../assets/firstpic.png';
 
 function SectionOne(){
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col lg:mb-10">
       <h1 className="text-2xl font-bold text-center my-6 px-4 md:text-5xl md:px-8 md:my-12 lg:px-32 lg:text-6xl lg:mt-24 lg:mb-16">
         Achieve Business & Financial{" "}
         <span className="text-regal-blue">Success</span> through our CPA
