@@ -1,6 +1,10 @@
 const mongoose = require('mongoose');
 
 const OfferSchema = new mongoose.Schema({
+    id: {
+        type: mongoose.Schema.Types.ObjectId,
+        // ref: 'Client',
+    },
     username: {
         type: String,
     },

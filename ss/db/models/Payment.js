@@ -1,8 +1,9 @@
 const mongoose = require('mongoose');
 
 const PaymentSchema = new mongoose.Schema({
-  username: {
-    type: String,
+  user_id: {
+    // type: String,
+    type: mongoose.Schema.Types.ObjectId,
   },
   email: {
     type: String,
@@ -13,9 +14,9 @@ const PaymentSchema = new mongoose.Schema({
   totalOffers: {
     type: Number,
   },
-  totalClicks: {
-    type: Number,
-  },
+  // totalClicks: {
+  //   type: Number,
+  // },
   totalPay: {
     type: Number,
   },

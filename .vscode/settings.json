@@ -5,5 +5,7 @@
     "git.enabled": true,
     "git.allowForcePush": true,
     "git.fetchOnPull": true,
-    "git.verboseCommit": true
+    "git.verboseCommit": true,
+    "terminal.integrated.localEchoStyle": "dim",
+    "terminal.integrated.sendKeybindingsToShell": true
 }
