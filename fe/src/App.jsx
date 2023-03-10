@@ -1,9 +1,11 @@
 import Layout from "./Components/Layout";
+// import Dashboard from "./Components/Dashboard";
 function App() {
 
   return (
-    <div className="w-full">
+    <div>
      <Layout />
+     {/* <Dashboard /> */}
     </div>
   );
 }
