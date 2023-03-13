@@ -2,8 +2,7 @@ const mongoose = require('mongoose');
 
 const PaymentSchema = new mongoose.Schema({
   user_id: {
-    // type: String,
-    type: mongoose.Schema.Types.ObjectId,
+    type: String, 
   },
   email: {
     type: String,
