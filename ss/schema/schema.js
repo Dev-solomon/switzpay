@@ -14,6 +14,7 @@ const {
     GraphQLInt,
     GraphQLScalarType,
     GraphQLFloat,
+    GraphQLInputObjectType,
   } = require('graphql');
 
   
@@ -49,7 +50,7 @@ const OfferType = new GraphQLObjectType({
          },
         category: { type: GraphQLString },
         device: { type: GraphQLString },
-        payout: { type: GraphQLInt },
+        payout: { type: GraphQLFloat },
         date: { type: GraphQLString },
         status: { type: GraphQLString }
     }),
@@ -67,28 +68,25 @@ const PaymentType = new GraphQLObjectType({
             }
         },
         paymentEmail: { type: GraphQLString },
-        totalOffers: () => {   
-               return Offer.find({id: `${parent.user_id}`}).count(); 
-            //     return Offer.countDocuments({id: `${parent.user_id}`}, function(err, c) {
-            //         console.log('Count is ' + c); 
-            //    }); 
-            
+        totalOffers: { 
+            type: GraphQLFloat,
+            resolve(parent, args){
+               return Offer.find({id: `${parent.user_id}`}).count();  
+            }
         },
         totalPay: { 
-            type: OfferType,
-            resolve(parent, args){
-                Offer.findById(parent.user_id);
-                Offer.find({payout: `${parent.user_id}`})
+            type: GraphQLFloat,
+            resolve (parent, args) { 
+                 Offer.find({id: `${parent.user_id}`}) 
                 .then(amount=>{
          
-                      const total = amount.reduce((accumulator, object) => {
-                        return accumulator + object.payout;
+                let total =  amount.reduce((accumulator, object) => {
+                         accumulator + object.payout; 
                       }, 0); 
-                })
-                .catch(err => {
-                    console.log(`This is an Error on the User's TotalPayout ${err}`);
-                    return;
-                });
+                       
+                      return total;                      
+                }); 
+                
             }
         },
         paidStatus: { type: GraphQLString },
@@ -103,7 +101,7 @@ const RootQuery =  new GraphQLObjectType({
         users: {
             type: new GraphQLList(UserType),
             resolve(parent, args) {
-                return User.find();
+                return User.find(); 
             },
         },
         user: {
@@ -123,7 +121,7 @@ const RootQuery =  new GraphQLObjectType({
             type: OfferType,
             args: { id: { type: GraphQLID } },
             resolve(parent, args){
-                return Offer.findById(args.id);
+                return Offer.find({id: `${args.id}`}).exec();
             }
         },
         payments: {
@@ -136,7 +134,7 @@ const RootQuery =  new GraphQLObjectType({
             type: PaymentType,
             args: { user_id: { type: GraphQLID } },
             resolve(parent, args){
-                return Payment.findById(args.user_id);;
+                return Payment.find({User_id: `${args.user_id}`}).exec();
             },
         },
     }
@@ -225,9 +223,8 @@ const mutation = new GraphQLObjectType({
             args: {
                 id: {type: new GraphQLNonNull(GraphQLString) }
             },
-            resolve(parent,args){
-                Offer.find({id: args.id})
-                return Offer.deleteMany();
+            resolve(parent,args){ 
+                return Offer.deleteMany({id: args.id});
             }
         },
         addPayment: {
@@ -251,9 +248,8 @@ const mutation = new GraphQLObjectType({
         deletePayment: {
             type: PaymentType,
             args:  { user_id: { type: new GraphQLNonNull(GraphQLString) } },
-            resolve(parent, args){
-                Payment.find({user_id: args.user_id});
-                return Payment.deleteMany();
+            resolve(parent, args){ 
+                return Payment.deleteMany({user_id: args.user_id});
             }
         }
  
