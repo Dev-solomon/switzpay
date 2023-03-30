@@ -8,7 +8,7 @@ const { graphqlHTTP } = require('express-graphql');
 const schema = require('./schema/schema');
 // eslint-disable-next-line no-unused-vars
 const connectDB = require('./db/config/connection');
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3000;
 // eslint-disable-next-line no-unused-vars
 const colors = require('colors');
 
