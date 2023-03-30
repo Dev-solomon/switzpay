@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "nodemon server.js",
-    "node": "nodemon server.js"
+    "node": "node server.js"
   },
   "repository": {
     "type": "git",
