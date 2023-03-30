@@ -2,7 +2,7 @@ const express = require('express');
 const route = express.Router();
 const userController = require('./controllers/userCtrl'); 
 const { authenticateToken } = require('./funcs/token');
-const imageUpload = require('../funcs/imageUpload');
+const imageUpload = require('./funcs/imageUpload');
 
 module.exports = function(app) {
   app.use((req, res, next) => {
