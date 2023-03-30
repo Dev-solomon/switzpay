@@ -8,7 +8,7 @@ const { graphqlHTTP } = require('express-graphql');
 const schema = require('./schema/schema');
 // eslint-disable-next-line no-unused-vars
 const connectDB = require('./db/config/connection');
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 8080;
 // eslint-disable-next-line no-unused-vars
 const colors = require('colors');
 
@@ -46,6 +46,7 @@ app.use(express.json())
 
 
 
-app.listen(port, ()=>{ 
+app.listen(port, (err)=>{ 
+    If(err) console.log(err);
     console.log(`YOUR APP IS RUNNING ON PORT::${port}`.cyan.underline.bold);
 });
