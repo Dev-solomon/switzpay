@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useMutation } from '@apollo/client'; 
 import { ADD_USER } from '../mutations/userMutations';
 import { GET_USERS } from '../queries/userQueries'; 
+import axios from 'axios';
 
 function SignupForm() {
     const [username, setUsername] = useState('');
@@ -28,11 +29,22 @@ function SignupForm() {
     
         if (username === '' || email === '' || password === '' || confirmPassword === '' || phone === '') {
           return alert('Please Fill In Any Missing Fields');
-        }
+        } 
+        
 
+        axios
+          .post(`http://localhost:5000/checkSign/${username}/${email}/${password}/${confirmPassword}`)
+          .then(res => console.log(res.data.bMessage))
+          .catch(err => console.error(err));
         
     
         addUser(username, email, password, confirmPassword, phone);
+
+        axios
+        .post(`http://localhost:5000/checkSign/newUser/${email}`)
+        .then(res => console.log(res.data.bMessage))
+        .catch(err => console.error(err));
+      
     
         setUsername('');
         setEmail('');
@@ -46,12 +58,12 @@ function SignupForm() {
         <div className='container col-lg-6 col-10 col-md-7 signup'>
                 <div className='top_form d-flex flex-row justify-content-between'>
                     <p>Sign Up</p>
-                    <button className='mt-3 btn'>Register</button>
+                    <button className='mt-3 btn' onClick={onSubmit}>Register</button>
                 </div>
 
                 <span>Let's create your account!</span>
                 {/* Form below for processing */}
-                <form onSubmit={onSubmit}>   
+                <form>   
                         {/* The username input field */}
                     <div>
                         <label>Username</label> <br/>

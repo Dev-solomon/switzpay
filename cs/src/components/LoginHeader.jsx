@@ -5,10 +5,13 @@ import swiss from '../assets/imgs/swiss-franc.png';
 import notifyBell from '../assets/imgs/notification.png';
 import user from '../assets/imgs/image.png';
 import arrowdown from '../assets/imgs/arrow-down2.png';
+import { BiUserCircle} from 'react-icons/bi';
+import { BiLogOut} from 'react-icons/bi';
+import { MdAdminPanelSettings} from 'react-icons/md';
 
 export class LoginHeader extends Component {
   render() {
-    return (
+    return (   
       <div className='Header d-lg-flex flex-lg-row justify-content-between'>
        <div className='header-logo col-4 my-auto'>
             <img  src={switz_logo} alt="switzpay-logo" />
@@ -19,8 +22,16 @@ export class LoginHeader extends Component {
           <p className='my-auto'><a href='/dashboard'>Dashboard</a></p>
           <p className='my-auto'><a href='/offers'>Offers</a></p>
           <p className='my-auto notification'><span className='notification-bell'><img src={notifyBell} alt ="notification-bell"/></span><i className='bell-num'>4</i></p>
-           <p className='my-auto'><img src={user}  alt="loggedIn-user" className='loggedIn-user'/><img src={arrowdown} alt='arrow-down' className='arrowdown' /></p>
-
+          <p className='my-auto dropdown dropleft float-right'><img src={user}  alt="loggedIn-user" className='loggedIn-user'/>
+           <img src={arrowdown} alt='arrow-down' className='arrowdown ' data-toggle="dropdown"/> 
+           <div className="dropdown-menu">
+              <span className="dropdown-item"><BiUserCircle/>Thomas Crew</span>
+              <a className="dropdown-item" href="/"><MdAdminPanelSettings/>Settings</a>
+              <a className="dropdown-item" href="/"><BiLogOut/>LogOut</a>
+            </div>
+          </p> 
+                        
+          
         </div>
         
       </div> 

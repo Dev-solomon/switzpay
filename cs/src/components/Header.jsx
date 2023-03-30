@@ -13,7 +13,7 @@ function Header() {
             <a href='/'>Home</a> 
             <a href='/'>About us</a> 
             <a href='/'>Contact</a> 
-            <button className='login-button'>Login</button>
+            <button className='login-button'><a href='login'>Login</a></button>
             <button className='signup-button'>Signup</button>
 
         </div>

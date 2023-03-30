@@ -6,6 +6,7 @@ import SignUp from './components/SignForm';
 import HomePage from './pages/HomePage';
 import Dashboard from './pages/Dashboard';
 import Offers from './pages/Offers';
+import Settings from './pages/Settings';
 import {BrowserRouter as Router, Routes, Route,} from 'react-router-dom';
 
 const cache = new InMemoryCache({ 
@@ -33,7 +34,7 @@ const cache = new InMemoryCache({
 });
 
 const client = new ApolloClient({
-  uri: 'http://localhost:8000/graphql',
+  uri: 'http://localhost:5000/graphql',
   cache,
 });
 
@@ -49,6 +50,7 @@ function App(){
             <Route path='/login' element={<Login />} /> 
             <Route path='/signup' element={<SignUp />} /> 
             <Route path='/offers' element={<Offers/>} />
+            <Route path='/settings' element={<Settings />} /> 
             <Route path='/admin' element={<AppHome />} /> 
           </Routes>
         </Router>

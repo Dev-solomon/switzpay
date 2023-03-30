@@ -16,6 +16,10 @@ const UserSchema = new mongoose.Schema({
   phone: {
     type: String,
   },
+  image: {
+    data: Buffer,
+    contentType: String
+}
 });
 
 module.exports = mongoose.model('User', UserSchema);

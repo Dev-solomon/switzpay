@@ -54,3 +54,6 @@ i.bell-num{
     font-size: 10px;
 
 }
+div.dropdown-menu{
+    top: 30px !important
+}
