@@ -4,7 +4,7 @@ import calculator from '../assets/imgs/calculator.png';
 
 function BlueCard({cardTitle}) {
   return (
-    <div className='col-4 blue-card d-flex flex-column justify-content-center'>
+    <div className='col-lg-4 col-md-8 mx-md-auto mx-lg-0 blue-card d-flex flex-column justify-content-center'>
         <div className='card-icon mx-auto blue'><img src={calculator} alt="card-icon" style={{width: "30px"}} /></div>
 
         <p className='text-center cardTitle'> { cardTitle } </p>

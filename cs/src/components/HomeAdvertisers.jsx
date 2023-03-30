@@ -7,8 +7,8 @@ function HomeAdvertisers() {
   return (
     <>
         <div className='d-flex flex-column Advertisers col-12 container'>
-        <p className='fs-3 text-dark'>Switzpay for Advertisers</p>
-        <div className='container d-lg-flex flex-lg-row justify-content-lg-evenly col-12 mt-20'> 
+        <p className='fs-3 text-dark text-lg-start  text-md-center text-sm-center text-center'>Switzpay for Advertisers</p>
+        <div className='container d-lg-flex d-md-flex d-sm-flex d-flex flex-lg-row flex-md-column flex-sm-column flex-column justify-content-lg-evenly justify-content-md-center justify-content-center col-12 mt-20'> 
             <BlueCard cardTitle="Predetermined costs" />
             <YellowCard cardTitle="Increased efficiency" />
             <RedCard cardTitle="Flexibility" />

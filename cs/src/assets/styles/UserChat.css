@@ -149,11 +149,12 @@
 
 /* CHATBOX
 =============== */
-.chatbox {
-    position: absolute;
-    bottom: 40px;
+.chatbox{
+    position: fixed; 
+    bottom: 20px;
     right: 25px;
 }
+
 
 /* CONTENT IS CLOSE */
 .chatbox__support {

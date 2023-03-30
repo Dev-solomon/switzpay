@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
-import '../assets/styles/UserChat.css';
-import emoji from '../assets/imgs/emojis.svg';
+import '../assets/styles/UserChat.css'; 
 import user from '../assets/imgs/image.png';
-import messageicon from '../assets/imgs/messages.png';
-import mic from '../assets/imgs/microphone.svg';
-import attach from '../assets/imgs/attachment.svg'; 
-import messagehelp from '../assets/imgs/message_us.png';
+import messageicon from '../assets/imgs/messages.png'; 
+import messagehelp from '../assets/imgs/message_us.png'; 
 
 class UserChat extends Component {
     constructor(props) {
@@ -19,6 +16,7 @@ class UserChat extends Component {
         this.display = this.display.bind(this);
         this.toggleState = this.toggleState.bind(this);
         this.showOrHideChatBox = this.showOrHideChatBox.bind(this);
+        // this.goDown = this.goDown(this);
     }
     
 
@@ -50,9 +48,7 @@ class UserChat extends Component {
             console.log("inactive"); 
         }
     }
-
-      
-    
+ 
  
     render() {
         // const { chatbutton, support } = this.state;
@@ -93,18 +89,14 @@ class UserChat extends Component {
                                 <span className="messages__dot"></span>
                             </div>  */}
                     </div>
-                        <div className="chatbox__footer">
-                            <img src={ emoji } alt=""/>
-                            <img src={ mic } alt=""/>
+                        <div className="chatbox__footer"> 
                             <input type="text" placeholder="Write a message..."/>
-                            <p className="chatbox__send--footer">Send</p>
-
-                            <img src={ attach } alt=""/>
+                            <p className="chatbox__send--footer">Send</p>  
                         </div>
                 </div>
                 <div className="chatbox__button d-flex flex-row justify-content-end">
                 <img src={ messagehelp } alt='Need Help?' />
-                    <button onClick={ this.display } className=""> 
+                    <button onClick={ this.display }> 
                          { this.state.button ? <img src={ messageicon } alt='messageIcon' /> : <img src={ messageicon } alt='messageIcon' /> }
                     </button>
                 </div>

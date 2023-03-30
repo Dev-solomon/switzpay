@@ -20,19 +20,19 @@ app.post('/api-test', function(req, res){
     const user_agent=  req.useragent; //lets collect their user agent to pass along.
     const max_offers= 5; //max number of offers to display.
 
-    const feed_url = `https://www.cpagrip.com/common/offer_feed_rss.php?user_id=755732&key=72e037598336521c7dc5a2b3eab50bae&limit=${max_offers}&ip=${user_ip}&ua=${urlencode(user_agent)}&tracking_id=${urlencode(tracking_id)}`;
+    const feed_url = `https://www.cpagrip.com/common/offer_feed_rss.php?user_id=755732&key=72e037598336521c7dc5a2b3eab50bae&limit=${max_offers}&ip=&ua=${urlencode(user_agent)}&tracking_id=${urlencode(tracking_id)}`;
 
      const reply = axios
         .post(feed_url)
         .then(resp => { 
             const data = JSON.parse(
-                xml.xml2js(resp.data, {compact: true, spaces: 2})
+                xml.xml2json(resp.data, {compact: true, spaces: 2})
             );
+            
             const offers =  data.rss.offers.offer;
             
             offers.forEach(offer => {
-                console.log(offer.title);
-                res.json(offer.title)
+                console.log(offer.title._cdata); 
             }); 
             
         })
