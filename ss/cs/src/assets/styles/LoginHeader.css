@@ -1,0 +1,59 @@
+.header-logo{
+    margin-left: 40px;
+}
+.Header{
+    background-color: white;
+    border-bottom: 1px ridge rgb(218, 216, 216); 
+    padding: 15px; 
+}
+span.total_earnings{
+    width: max-content;
+    height: fit-content;
+    border-radius: 5px;
+    background-color: #4ABB481A;
+    color: black;
+    padding: 6px;
+    margin-left: 3px;
+}
+p img.loggedIn-user{
+    width: 35px;
+    height: fit-content;
+    border-radius: 50%;
+    border: none;
+}
+p img.arrowdown{
+    color: black;
+    margin-left: 5px;
+}
+.loggedIn-Header p a{
+    text-decoration: none;
+    color: black;
+}
+.loggedIn-Header p{
+    font-weight: 400;
+}
+.loggedIn-Header p a:hover{
+    color: var(--primaryBlue);
+    border-bottom: 1px solid var(--primaryBlue);
+}
+p.notification{
+    position: relative;
+}
+i.bell-num{
+    position: absolute;
+    top: 0;
+    z-index: 90;
+    color: white;
+    width: 15px;
+    height: 15px; 
+    border-radius: 50%; 
+    background-color: red;    
+    left: 12px;
+    right: auto;
+    text-align: center; 
+    font-size: 10px;
+
+}
+div.dropdown-menu{
+    top: 30px !important
+}

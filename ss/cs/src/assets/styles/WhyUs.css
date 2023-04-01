@@ -1,0 +1,24 @@
+div.why-us{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+div.why-us .content{ 
+    font-size: 18px;
+    margin-top: 80px;
+}
+div.why-img>img{   
+   z-index: 999;
+   position: absolute;
+   right: 0;  
+}
+div#offer-under{  
+    margin-top: 80px; 
+    opacity: 0.2;
+    background-color: var(--primaryBlue);
+    width: 510px;
+    height: 300px;   
+    border-radius: 8px;
+}
+div.why-us{
+    position: relative;
+}

@@ -1,0 +1,50 @@
+/* for the total earning card on the dashboard */
+div.total-earned{
+    background-color: #4ABB481A; 
+    padding: 20px;
+    margin: 8px;
+    border-radius: 10px;
+}
+div.total-earned div p{
+    color: black;
+}
+img.cash{
+    background-color: hsla(119, 46%, 51%, 0.102);
+    color: black;
+    padding: 10px; 
+    border-radius: 4px;
+    border: none;
+}
+div.clicks{
+    padding: 20px;
+    background-color: #0EA4F24D;
+    margin: 8px;
+    border-radius: 10px;
+}
+div.leads{
+    padding: 20px;
+    background-color: #F50C2D1A;
+    margin: 8px;
+    border-radius: 10px;
+}
+div.dashboard{
+    margin-top: 20px; 
+    font-weight: 500px;
+}
+img.dot{
+    box-sizing: border-box;
+    margin-right: 4px;
+}
+img.filter{
+    box-sizing: border-box;
+    margin-left: 4px;
+}
+span.price{
+    font-size: large;
+    font-weight: 700;
+    color: black; 
+    float: right;
+}
+div.amp{
+    float: right;
+}

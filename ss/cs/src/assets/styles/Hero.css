@@ -1,0 +1,31 @@
+div.hero-section{
+    margin-top: 30px;
+}
+.caption{
+    font-size: 40px;
+    text-align: center; 
+    font-weight: 700;
+}
+.caption-title{
+    font-size: 20px;
+    text-align: center;
+}
+button.caption-button{
+    padding-left: 20px; 
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    border: none;
+    background-color: var(--primaryBlue);
+    color: white;
+    border-radius: 6px;
+    width: max-content;
+}
+
+.caption-picture>img{
+    height: 350px;
+    width: inherit; 
+    margin-top: 30px;
+    border-radius: 10px;
+}

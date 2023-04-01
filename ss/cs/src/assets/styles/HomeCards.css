@@ -1,0 +1,82 @@
+/* FOR THE ADVERTISERS SECTION ON THE HOMEPAGE  */
+div.Advertisers{
+    width: inherit;
+    margin-top: 50px;
+}
+p.cardTitle{
+    font-weight: 500;
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* FOR THE BLUE CARDS ON THE HOMEPAGE */
+div.blue-card{
+    background-color: #0EA4F24D;
+    border-radius: 7px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 8px;
+}
+div.yellow-card{
+    background-color: #cdfb1533;
+    border-radius: 7px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 8px;
+}
+div.red-card{
+    background-color: #F50C2D1A;
+    border-radius: 7px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 8px;
+}
+/* FOR THE ICONS INSIDE THE CARDS */
+div.card-icon{
+    border-radius: 50%;
+    padding: 20px; 
+}
+div.card-icon.blue{
+    background-color: #07a0f34d;
+}
+div.card-icon.yellow{
+    background-color: #ccff007e;
+}
+div.card-icon.red{
+    background-color: #f808281a;
+}
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+/* THIS IS THE CSS RESPONSIVENESS FOR TABLET SCREENS     */
+@media screen and (min-width: 765px) and (max-width: 991px) {
+    div.blue-card{
+        background-color: #0EA4F24D;
+        border-radius: 7px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin: 8px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    div.yellow-card{
+        background-color: #cdfb1533;
+        border-radius: 7px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin: 8px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    div.red-card{
+        background-color: #F50C2D1A;
+        border-radius: 7px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin: 8px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+}
+ 
