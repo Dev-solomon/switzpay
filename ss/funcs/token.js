@@ -8,13 +8,12 @@ const authenticateToken = (req, res, next) => {
     if (token == null) return res.sendStatus(401)
   
     Jwt.verify(token, process.env.JWT_SECRET, (err, user) => {
-      console.log(err)
 
       if (err) return res.json({ bMessage: "UnAuthorized Access"});
 
       req.userID = user;
 
-      console.log(`${req.userID.name} Authentication verified`);
+      console.log(`${req.userID.name} Authentication verified`.green.bold);
 
       next()
     })

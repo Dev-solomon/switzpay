@@ -39,8 +39,7 @@ export class Dashboard extends Component {
   })
   .catch(err => console.error(err));
 
-    console.log(name);
-    console.log(test);
+    console.log(name); 
     
   }
 

@@ -120,8 +120,7 @@ exports.checkSignIn = ( req, res) => {
         } catch (err) {
           console.log(` This is the issue ${err}`); 
         } 
-          
-       console.log(`${accessToken}`.green); 
+           
        
        return res
        .cookie("access_token", accessToken, {

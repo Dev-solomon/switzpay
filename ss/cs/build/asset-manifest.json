@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.760c71e2.css",
+    "main.js": "/static/js/main.eb021f2e.js",
+    "static/js/787.113770bf.chunk.js": "/static/js/787.113770bf.chunk.js",
+    "static/media/hero-pic.png": "/static/media/hero-pic.7ac6cff619b6154092c7.png",
+    "static/media/ads.png": "/static/media/ads.8de2ff8774ddf1e3f8fe.png",
+    "static/media/star-review.png": "/static/media/star-review.ecc1b4cdb0d1eb884e7e.png",
+    "static/media/switz_logo.png": "/static/media/switz_logo.e36f558b78007e5c3af4.png",
+    "static/media/Offers-page.png": "/static/media/Offers-page.5199943c44c7ac691f90.png",
+    "static/media/logo.jpg": "/static/media/logo.f01383ce81bad1b0f43d.jpg",
+    "index.html": "/index.html",
+    "main.760c71e2.css.map": "/static/css/main.760c71e2.css.map",
+    "main.eb021f2e.js.map": "/static/js/main.eb021f2e.js.map",
+    "787.113770bf.chunk.js.map": "/static/js/787.113770bf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.760c71e2.css",
+    "static/js/main.eb021f2e.js"
+  ]
+}
