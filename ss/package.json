@@ -4,8 +4,9 @@
   "description": "This is a mini cpa marketing software",
   "main": "server.js",
   "scripts": {
+    "build": "echo \"No build specified\" && exit 1",
     "test": "nodemon server.js",
-    "node": "nodemon server.js"
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
