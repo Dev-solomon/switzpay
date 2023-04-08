@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "This is a mini cpa marketing software",
   "main": "server.js",
-  "scripts": {
-    "build": "cd cs && npm run build",
+  "scripts": { 
     "test": "nodemon server.js",
     "start": "node server.js",
      "dev": "nodemon server.js"
