@@ -10,6 +10,14 @@ import { BiLogOut} from 'react-icons/bi';
 import { MdAdminPanelSettings} from 'react-icons/md';
 
 export class LoginHeader extends Component {
+
+  // eslint-disable-next-line no-useless-constructor
+  constructor(props) {
+    super(props); 
+
+    
+  }
+
   render() {
     return (   
       <div className='Header d-lg-flex flex-lg-row justify-content-between'>
@@ -25,7 +33,7 @@ export class LoginHeader extends Component {
           <p className='my-auto dropdown dropleft float-right'><img src={user}  alt="loggedIn-user" className='loggedIn-user'/>
            <img src={arrowdown} alt='arrow-down' className='arrowdown ' data-toggle="dropdown"/> 
            <div className="dropdown-menu">
-              <span className="dropdown-item"><BiUserCircle/>Thomas Crew</span>
+              <span className="dropdown-item"><BiUserCircle/>{this.props.name}</span>
               <a className="dropdown-item" href="/"><MdAdminPanelSettings/>Settings</a>
               <a className="dropdown-item" href="/"><BiLogOut/>LogOut</a>
             </div>

@@ -16,11 +16,11 @@ const colors = require('colors');
 
 const app = express(); //start running App
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, "..", "build")));
+app.use(express.static(path.join(__dirname, "cs", "build")));
 
 
 //passing root variable
-app.use('/',  require('./routes'));
+app.use('/',  require('./routes')); 
 
 // GraphQL connector for use
 app.use(
@@ -34,9 +34,8 @@ app.use(
 // require('./routes')(app);
 
 app.use((req, res, next) => {
-  res.sendFile(path.join(__dirname, "..", "build", "index.html"));
-})
-  
+  res.sendFile(path.join(__dirname, "cs", "build", "index.html")); 
+});
 
 app.use(cors());
 //log requests

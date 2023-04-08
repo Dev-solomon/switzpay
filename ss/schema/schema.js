@@ -1,7 +1,6 @@
 const User = require('../db/models/User'); 
 const Payment = require('../db/models/Payment');
-const Offer = require('../db/models/Offer');   
-// const Click = require('../db/models/Click'); 
+const Offer = require('../db/models/Offer');    
 
 const {
     GraphQLObjectType,

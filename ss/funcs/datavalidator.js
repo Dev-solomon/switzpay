@@ -16,7 +16,6 @@ const schema = Joi.object({
             }}) 
 });
 
-const test = schema.validate({username: 'abc' })
-console.log(test);
+
 
 module.exports = schema;

@@ -6,14 +6,18 @@ import AdPost from '../components/ads';
 import { PostCards } from '../components/PostCard';
 import UserChat from '../components/UserChat'; 
 import BlogRead from '../components/BlogRead';
+import Cookies from 'js-cookie';
+import axios from 'axios';
 
 
 export class Dashboard extends Component {
-  // constructor(props) {
-  //   super(props); 
+  constructor(props) {
+    super(props); 
 
-  //    this.displayData = this.displayData.bind(this);
-  // }     
+     this.state = {
+      username: ""
+     }
+  }     
 
   componentDidMount(){
     this.displayData();
@@ -21,18 +25,29 @@ export class Dashboard extends Component {
   }  
 
   displayData = () => { 
-   const cookieValue = document.cookie.split('; ').filter(row => row.startsWith('access_token=')).map(c=>c.split('=')[1])[0];
 
-    console.log(document.cookie);
-    console.log(cookieValue);
-    console.log('hello');
+  const name = Cookies.get('access_token'); 
 
+  axios
+  .post(`http://localhost:5000/getDisplayData`, {
+    headers: {
+      Cookie: `access_token=${name}`
+    }
+  })
+  .then(res => {
+    this.setState({ username: res.data.bMessage })
+  })
+  .catch(err => console.error(err));
+
+    console.log(name);
+    console.log(test);
+    
   }
 
   render() {
     return (
       <div>
-        <LoginHeader/>
+        <LoginHeader name={ this.state.username }/>
         <Info/>
         <DashboardEarnings/>
         <AdPost/> 

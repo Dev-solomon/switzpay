@@ -15,8 +15,7 @@ class UserChat extends Component {
         } 
         this.display = this.display.bind(this);
         this.toggleState = this.toggleState.bind(this);
-        this.showOrHideChatBox = this.showOrHideChatBox.bind(this);
-        // this.goDown = this.goDown(this);
+        this.showOrHideChatBox = this.showOrHideChatBox.bind(this); 
     }
     
 
@@ -50,12 +49,7 @@ class UserChat extends Component {
     }
  
  
-    render() {
-        // const { chatbutton, support } = this.state;
-        // const classes = {
-        //     first: chatbox__support,
-        //     second: chatbox--active
-        // }
+    render() { 
         return ( 
             
             <div className="container">

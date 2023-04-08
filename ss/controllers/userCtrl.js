@@ -89,7 +89,7 @@ exports.checkSignSuccess= (req, res) => {
 // Login controller For Users
 exports.checkSignIn = ( req, res) => {
   const { email, loginPassword } = req.params; 
-//   const { error } = dataValidator.validate({email: email, password: loginPassword});
+//   const { error, value } = dataValidator.validate({email: email, password: loginPassword});
 
 //   if (error){ 
 //     return res.json({
@@ -107,11 +107,12 @@ exports.checkSignIn = ( req, res) => {
         console.log(`${user[i].username} Just Signed into An Account with ${user[i].email}`.yellow.bold);
           
         const User = user[i].username;
+        const Email = user[i].email;
         let accessToken;
     
         try {
           //Creating jwt token
-          accessToken = Jwt.sign({name: User}, process.env.JWT_SECRET);
+          accessToken = Jwt.sign({name: User, email: Email}, process.env.JWT_SECRET);
 
           if (accessToken) {
             console.log(`${User}'s Token Has Been Generated.`.yellow.bold);
@@ -124,8 +125,8 @@ exports.checkSignIn = ( req, res) => {
        
        return res
        .cookie("access_token", accessToken, {
-          httpOnly: true, 
-          maxAge: 180000,
+          httpOnly: false, 
+          maxAge: 86400000,
           secure: false
        })
        .status(200)
@@ -141,14 +142,7 @@ exports.checkSignIn = ( req, res) => {
 
 }
  
-
-exports.test = (req, res) => { 
-  res.json({
-    bMessage: `${req.userID.name}, the jwt process has worked`
-  });
-  console.log(`${req.userID.name}, the jwt process has worked`);
-}
-
+// For Image-Upload of User
 exports.imageUpload = (req, res) => {
   const obj = {
     img: {
@@ -156,11 +150,139 @@ exports.imageUpload = (req, res) => {
         contentType: "image/png"
     }
 }
-const newImage = new userModel({
+const newImage = new MerchantModel({
     image: obj.img
 });
 
 newImage.save((err) => {
     err ? console.log(err) : res.json({ bMessage: `Image Successfully Added!`});
 });
+}
+
+exports.DashboardData = (req, res) => {
+  res.json({
+    bMessage: `${req.userID.name}`
+  });
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+exports.test = (req, res) => { 
+  res.json({
+    bMessage: `${req.userID.name}, the jwt process has worked`
+  });
+  console.log(`${req.userID.name}, the jwt process has worked`);
 }
