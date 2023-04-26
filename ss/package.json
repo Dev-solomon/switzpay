@@ -4,6 +4,7 @@
   "description": "This is a mini cpa marketing software",
   "main": "server.js",
   "scripts": { 
+     "build": "cd cs && yarn build",
     "test": "nodemon server.js",
     "start": "node server.js",
      "dev": "nodemon server.js"
